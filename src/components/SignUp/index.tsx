@@ -8,7 +8,7 @@ import GadgetBanner from '../GadgetBanner';
 const EcommerceCover = {
 
     title : "Prime Computers",
-    coverImage : deliverymin.src
+    coverImage : '/logo_square_dark.png'
 }
 function Container({ children }: { children: React.ReactNode }) {
   return (

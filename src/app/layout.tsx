@@ -1,6 +1,6 @@
 
-
-import { Html, Head, Main, NextScript } from "next/document";
+// not allowed  
+// 
 import React, { ReactElement } from "react";
 //import "@/styles/globals.css";
 import "./globals.css";
@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from "../components/header/Header";
 import HeaderBottom from "../components/header/HeaderBottom";
 import Footer from "../components/Footer";
-import App from "./_app";
+//import App from "./_app";
 import { Providers } from "./providers";
 
 export const metadata = {

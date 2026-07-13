@@ -1,7 +1,7 @@
 import LogoImage from '@/app/_components/logo-image-ecommerce';
 import React, { useState } from 'react';
-import deliverymin from '../../public/logo_square_dark.png'
-import fallbackusergooglesign from '../../public/fallback-user-google-sign-image.png'
+//import deliverymin from '../../public/logo_square_dark.png'
+//import fallbackusergooglesign from '../../public/fallback-user-google-sign-image.png'
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -12,7 +12,7 @@ import HappyCustomerLogo from './HappyCustomerLogo';
 const EcommerceCover = {
 
     title : "Prime Computers",
-    coverImage : deliverymin.src
+    coverImage : '/logo_square_dark.png'
 }
 export function checkImageExists(url: string): Promise<boolean> {
   return new Promise((resolve) => {
