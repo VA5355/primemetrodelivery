@@ -1,0 +1,27 @@
+import React from "react";
+import { Metadata } from "next";
+import { Providers } from "./providers";
+import "./globals.css";
+
+// Setting metadataBase prevents open-graph rendering warnings during static site generation
+export const metadata: Metadata = {
+  title: "Amazon Clone Next.js 14",
+  description: "High performance production-ready e-commerce build",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
+};
+
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
+  return (
+    <html lang="en">
+      <body className="font-bodyFont bg-gray-300">
+        <Providers>
+          {children}
+        </Providers>
+      </body>
+    </html>
+  );
+}
