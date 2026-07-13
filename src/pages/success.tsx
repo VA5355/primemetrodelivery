@@ -1,3 +1,4 @@
+"use client";
 import { resetCart } from "@/store/nextSlice";
 import Link from "next/link";
 import React from "react";

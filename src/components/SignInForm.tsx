@@ -1,6 +1,8 @@
 import LogoImage from '@/app/_components/logo-image-ecommerce';
 import React, { useState } from 'react';
 //import deliverymin from '../../public/logo_square_dark.png'
+// import deliverymin from '../../public/logo_square_dark.png'
+ import logosquaredark from "@/public/logo_square_dark.png";
 //import fallbackusergooglesign from '../../public/fallback-user-google-sign-image.png'
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useSelector, useDispatch } from "react-redux";
@@ -12,7 +14,7 @@ import HappyCustomerLogo from './HappyCustomerLogo';
 const EcommerceCover = {
 
     title : "Prime Computers",
-    coverImage : '/logo_square_dark.png'
+    coverImage : logosquaredark.src
 }
 export function checkImageExists(url: string): Promise<boolean> {
   return new Promise((resolve) => {

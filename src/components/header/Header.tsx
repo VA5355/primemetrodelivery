@@ -6,6 +6,9 @@ import deliverymin from '../../../public/logo_square_dark.png'
 //import primecomputerheader from '../../../public/logo_dark_header.png'
 //import primecomputertext from '../../../public/primelog.png'
 //import fallbackusergooglesign from '../../../public/fallback-user-google-sign-image.png'
+// Import directly from your public folder path
+import primecomputerheader from "@/public/logo_dark_header.png"; 
+import primecomputertext from "@/public/primelog.png";
 import Image from "next/image"
 import cartIcon from "../../images/cart.png";
 import { BiCaretDown } from "react-icons/bi";
@@ -31,8 +34,8 @@ export function checkImageExists(url: string): Promise<boolean> {
 }
 const Header = () => {
     const { data: session } = useSession();
-    const primecomputerheader = "/logo_dark_header.png";
-    const primecomputertext = "/primelog.png";
+   // const primecomputerheader = "/logo_dark_header.png";
+   // const primecomputertext = "/primelog.png";
     const [userValidImg, setUserValidImg] = useState(false);
      const router = useRouter();
     const {productData,favoriteData, userInfo} = useSelector(
@@ -75,8 +78,8 @@ const Header = () => {
         <div className="h-full w-full mx-auto inline-flex items-center justify-between gap-1 mdl:gap-3 px-4 ">
             {/* logo */}
             <Link href={"/"} className="px-2 border border-transparent hover:border-white cursor-pointer duration-300 flex items-center justify-center h-[70%]">
-            <Image className="w-16 object-cover "  src={primecomputerheader }  width={60}
-      height={63} alt="logoImg"/>  <Image className="w-48 px-4 object-cover "  src={primecomputertext}  width={150}
+            <Image className="w-16 object-cover "  src={primecomputerheader.src }  width={60}
+      height={63} alt="logoImg"/>  <Image className="w-48 px-4 object-cover "  src={primecomputertext.src}  width={150}
       height={103} alt="logoImg"/> 
             </Link>
             {/* delivery */}
